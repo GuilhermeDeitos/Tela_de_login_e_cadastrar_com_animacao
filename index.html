@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title> <!--Titulo do site-->
+  <link rel="shortcut icon" href="conteudo-do-site.svg" type="image/x-icon"> <!--link do icon-->
+  <link rel="stylesheet" href="styles/style.css"> <!--link do css-->
+  <script src="https://kit.fontawesome.com/dba175805d.js" crossorigin="anonymous"></script> <!--script do site onde foi pego os icones-->
+  
+</head>
+<body> 
+  <div class="container"> <!--div container onde todos os outros itens/elementos vão estar dentro-->
+    <div class="content first-content"><!--inicio do First Content-->
+      <div class="first-column"> <!--Inicio da primeira coluna-->
+        <h2 class="title title-primary">Welcome Back!</h2> <!-- titulo primario do site -->
+        <p class="description description-primary"> <!-- descrição primaria do site -->
+          To keep connected with us <br> <!-- tag br para pular linha -->
+          please login with your personal info
+        </p>
+        <button id="sign-in" class="btn btn-primary">sign in</button> <!-- botão sign in para "logar" que será utilizado para a animação/dinamização com JS-->
+      </div><!--fim da primeira coluna-->
+      <div class="second-column"> <!--Inicio da segunda coluna-->
+        <h2 class="title title-second">create account</h2> <!-- titulo secundario -->
+        <div class="social-media"> <!--Inicio Social media-->
+          <ul class="list-social-media"> <!-- para iniciar uma lista -->
+            <a class="link-social-media" href="#"> <!-- para fazer com que todos os icons sejam links -->
+              <li class="item-social-media"> <!-- item de uma lista -->
+                  <i class="fab fa-github"></i> <!-- icon github -->
+              </li> 
+            </a>
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">  
+                <i class="fab fa-instagram"></i>
+              </li> 
+            </a>
+            <a class="link-social-media" href="#"> 
+              <li class="item-social-media">
+                  <i class="fab fa-linkedin-in"></i> 
+              </li>
+            </a>  
+          </ul>
+        </div> <!--Fim Social media-->
+        <p class="description description-second">or use your email for registration: </p>
+        <form class="form"> <!--Inicio Form-->
+          <label class ="label-input" for="">
+            <i class="far fa-user icon-modify"></i> <!-- icon de user -->
+            <input type="text" placeholder="Name" required>
+          </label>
+          <label class ="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" placeholder="Email" required>
+          </label>
+          <label class ="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Password" required>
+          </label>
+          
+          <button class="btn btn-second">Sign Up</button> <!-- botão de Sign up para "cadastrar" -->
+        </form> <!--FIm Form-->
+      </div><!--fim da segunda coluna-->
+    </div><!--fim do First Content-->
+
+    <div class="content second-content"> <!--inicio do second Content-->
+      <!-- Bem semelhante ao primeiro conteudo -->
+      <div class="first-column"> <!--Inicio da primeira coluna-->
+        <h2 class="title  title-primary">Hello Friend</h2>
+        <p class="description description-primary">
+          Enter your personal datails <br>
+          and start journey with us
+        </p>
+        <button id="sign-up" class="btn btn-primary">sign up</button> <!--botão de cadastrar que será utilizado para a animação/dinamização com JS-->
+      </div><!--fim da primeira coluna-->
+      <div class="second-column"> <!--Inicio da segunda coluna-->
+        <h2 class="title  title-second">Sign in to developer</h2>
+        <div class="social-media"> <!--Inicio Social media-->
+          <ul class="list-social-media">
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                  <i class="fab fa-github"></i>
+              </li> 
+            </a>
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">  
+                <i class="fab fa-instagram"></i>
+              </li> 
+            </a>
+            <a class="link-social-media" href="#"> 
+              <li class="item-social-media">
+                  <i class="fab fa-linkedin-in"></i> 
+              </li>
+            </a>  
+          </ul>
+        </div> <!--Fim Social media-->
+        <p class="description description-second">or use your email account: </p>
+        <form class="form"> <!--Inicio Form-->
+          <label class ="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" placeholder="Email" required>
+          </label>
+          <label class ="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Password" required>
+          </label>
+          <a class="password"href="#">forgot your password</a> <!--link para caso esqueça a senha-->
+          <button class="btn btn-second">sign in</button> <!--botão de logar-->
+        </form> <!--FIm Form-->
+      </div><!--fim da segunda coluna-->
+    </div><!--fim do second Content-->
+  </div>
+  <script src="js/app.js"></script> <!--script que vai mudar o nome do body permitindo aquela animação -->
+</body>
+</html>
